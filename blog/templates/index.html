@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio for Study Group</title>
+  <link rel="stylesheet" href="{%static 'css/style.css'%}">
+  <link rel="stylesheet" href="{%static 'css/reset.css'%}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="topBar">
+      <p class="announce">만드는게 쉽지가 않아요 이것저것 계속 검색해야되고 저도 이만큼하는데 일주일 걸렸어요</p>
+      <a href="#" class="login">로그인</a>
+    </div>
+    <div class="header">
+      <a href="{%url 'index'%}"><img src="{%static 'img/logo.png'%}" alt="로고"></a>
+    </div>
+    <div class="menu">
+      <a href="{%url 'index'%}" class="home">홈</a>
+      <a href="#" class="info">페이지 정보</a>
+      <a href="#" class="project">프로젝트</a>
+      <a href="#" class="WIKI">TIL WIKI</a>
+    </div>
+    <div class="search">
+      <form class="searchBar" action="/group/">
+        <input type="text" class="searchText" placeholder="그룹검색">
+        <button type="submit" class="searchBt"><i class="fas fa-search fa-2x"></i></button>
+      </form>
+    </div>
+    <div class="blockContainer">
+      <div class="state">
+        <p>페이지 정보</p>
+      </div>
+      <div class="block">
+        <div class="profile"><img src="{%static 'img/profile.jpg'%}" alt="profile"></div>
+        <div class="personal">
+          <p><i class="far fa-user"></i>김주현(25)</p><br>
+          <p><i class="fas fa-school"></i>한국외국어대학교(휴학 중)</p>
+          <p><i class="fas fa-graduation-cap"></i>터키아제르바이잔어/융복합소프트웨어</p>
+        </div>
+        <div class="statement">
+          <p>안녕하세요, 본전공을 포기한 남자 김주현입니다.
+            <br>예전에 한번 많은 사람이 쓸 수있게 만들어보고자 했던 페이지인데,
+            <br> 역시 만들어 배포하는 템플릿에 비해서는 부실하네요ㅠㅠ
+            <br>로켓펀치처럼 자기소개와 했던 프로젝트를 기술스택과 함께 나열하고 서치,
+            <br>나아가 TIL(today I learned)까지 가능한 사이트를 목표로 제작했었습니다.
+            <br>멋사 활동 끝나기 전까지는 동적인 부분의 작업을 완료하는게 목표입니당.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="announce">주현의 시간 여기 잠들다 RIP</p>
+    </div>
+  </div>
+</body>
+
+</html>
