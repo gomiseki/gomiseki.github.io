@@ -1,0 +1,1 @@
+# gomiseki.github.io
