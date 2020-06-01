@@ -142,6 +142,7 @@ html,body{
   height: 300px;
 }
 .block >.personal >p{
+  color: #686868;
   display: inline-block;
   margin-top:40px;
   padding-bottom: 10px;
@@ -174,8 +175,9 @@ html,body{
   padding-bottom: 200px;
 }
 .statement>p{
-  font-size: 20px;
-  font-weight: 500;
+  color: #686868;
+  font-size: 18px;
+  font-weight: 700;
 }
 .footer{
   grid-area:6 1 span2 span 7;
