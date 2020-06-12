@@ -25,7 +25,7 @@ SECRET_KEY = '3hl#dylo==(_)pdsv4a_3gg$biiktve4*96h6g5l8apuvks6g6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['gomiseki.pythonanywhere.com']
 
 
 # Application definition
