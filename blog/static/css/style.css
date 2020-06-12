@@ -36,7 +36,7 @@ html,body{
   color:white;
 }
 .header{
-  grid-area:2 1 span2 span3;
+  grid-area:2 1 span1 span1;
   text-align: center;
 }
 .header > a{
@@ -46,9 +46,9 @@ html,body{
 }
 .menu{
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  margin:0;
-  grid-area:3 1 span2 span 4;
+  grid-template-columns: 10% 100px 100px 100px 100px;
+  grid-area:3 1 span1 span5;
+  border-bottom: 1px solid rgb(220, 210, 210); ;
   background-color: #3d8ddd;
 }
 .menu > a{
@@ -61,6 +61,8 @@ html,body{
 }
 .menu> .home{
   background-color: #1b5ea2;
+  border-bottom: 5px solid white;
+  margin-bottom: 5px;
 }
 .search{
   grid-area: 4 1 span2 span5;
@@ -98,7 +100,7 @@ html,body{
 .blockContainer{
   display: grid;
   grid-gap: 1px;
-  max-width: 1000px;
+  width: 1000px;
   grid-template-rows:70px 830px ;
   grid-area: 5 1 span2 span 6;
   background-color: rgb(220, 210, 210);
