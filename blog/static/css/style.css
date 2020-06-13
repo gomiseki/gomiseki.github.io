@@ -122,10 +122,17 @@ html,body{
 }
 
 .block{
+  justify-content: center;
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
   background-color:whitesmoke;
+}
+.wordcount{
+  margin-top:10px;
+}
+.wordcount>form>textarea:focus{
+  outline:none;
 }
 .profile{
   border: 1px solid rgb(220, 210, 210);

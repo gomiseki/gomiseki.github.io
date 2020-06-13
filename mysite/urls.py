@@ -19,5 +19,6 @@ import blog.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', blog.views.index, name='index'),
-    path('project/', blog.views.project, name='project')
+    path('project/', blog.views.project, name='project'),
+    path('wordcount/', blog.views.wordcount, name='wordcount')
 ]

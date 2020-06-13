@@ -37,14 +37,28 @@
         <p>Wordcount</p>
       </div>
       <div class="block">
+        {% if gnarstate %}
         <img src="{%static 'img/나르.png'%}" alt="나르">
         <div class="wordcount">
-          <form action="{% url 'wordcount' %}">
-            <textarea cols="100" rows="10" name="fulltext" placeholder="나르에게 말을 걸어봐요!" ></textarea> 
+          <form action="{% url 'project' %}">
+            <textarea cols="100" rows="10" name="fulltext">{% for word, howmany in dictionary%}{{word}} 단어를 {{howmany}}개
+{%endfor%}
+총 {{total}}단어 말하셨네요
+            </textarea> 
             <br> 
-            <input type="submit" value="말 걸기"> 
+            <input type="submit" value="다시하기"> 
           </form>
-        </div> 
+        </div>
+        {%else%}
+        <img src="{%static 'img/메가나르.png'%}" alt="나르">
+        <div class="wordcount">
+          <form action="{% url 'project' %}">
+            <textarea cols="100" rows="10" name="fulltext" placeholder="투머치 토커에 나르가 화났네요!" ></textarea> 
+            <br> 
+            <input type="submit" value="다시하기"> 
+          </form>
+        </div>
+        {%endif%}
       </div>
     </div>
     <div class="footer">
